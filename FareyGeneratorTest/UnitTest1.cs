@@ -13,5 +13,6 @@ namespace FareyGeneratorTest
             int result = FareyGeneratorLib.FareyGenerator.Generate(0);
             Assert.AreEqual(0, result);
         }
+
     }
 }

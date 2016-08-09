@@ -10,7 +10,9 @@ namespace FareyGeneratorLib
     {
         public static int Generate(int n)
         {
-            return 0;
+            if (n < 1)
+                return 0;
+            return -1; //Dummy value
         }
     }
 }
