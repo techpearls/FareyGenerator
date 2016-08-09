@@ -22,18 +22,25 @@ namespace FareyGeneratorTest
         }
 
         [TestMethod]
-        public void TestThree()
+        public void TestThree_VerifyResult()
         {
             var result = FareyGeneratorLib.FareyGenerator.Generate(3);
             Assert.AreEqual(5, result.Count);
         }
 
         [TestMethod]
-        public void TestThreeDetails()
+        public void TestThree_VerifyDetails()
         {
             var result = FareyGeneratorLib.FareyGenerator.Generate(3);
             var expected = new List<string>() { "0/1", "1/3", "1/2", "2/3", "1/1" };
             CollectionAssert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void TestOne_VerifyCount()
+        {
+            var result = FareyGeneratorLib.FareyGenerator.Generate(1);
+            Assert.AreEqual(2, result.Count);
         }
     }
 }
