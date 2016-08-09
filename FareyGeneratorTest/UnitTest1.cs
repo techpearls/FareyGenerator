@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+using FareyGeneratorLib;
 
 namespace FareyGeneratorTest
 {
@@ -10,9 +10,15 @@ namespace FareyGeneratorTest
         [TestMethod]
         public void TestZero()
         {
-            int result = FareyGeneratorLib.FareyGenerator.Generate(0);
-            Assert.AreEqual(0, result);
+            string result = FareyGenerator.Generate(0);
+            Assert.AreEqual("0", result);
         }
 
+        [TestMethod]
+        public void TestNegative()
+        {
+            string result = FareyGenerator.Generate(-1);
+            Assert.AreEqual("0", result);
+        }
     }
 }

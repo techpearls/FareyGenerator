@@ -8,11 +8,11 @@ namespace FareyGeneratorLib
 {
     public static class FareyGenerator
     {
-        public static int Generate(int n)
+        public static string Generate(int n)
         {
             if (n < 1)
-                return 0;
-            return -1; //Dummy value
+                return "0";
+            return "-1"; //Dummy value
         }
     }
 }
