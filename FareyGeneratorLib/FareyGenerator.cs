@@ -24,6 +24,10 @@ namespace FareyGeneratorLib
             {
                 x = Math.Floor((y1 + n) / y2) * x2 - x1;
                 y = Math.Floor((y1 + n) / y2) * y2 - y1;
+
+                if (x > y)
+                    break;
+
                 result.Add(x.ToString() + "/" + y.ToString());
                 x1 = x2;
                 x2 = x;
