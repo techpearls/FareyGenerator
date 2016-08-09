@@ -10,9 +10,22 @@ namespace FareyGeneratorTest
         [TestMethod]
         public void TestZero()
         {
-            int result = FareyGeneratorLib.FareyGenerator.Generate(0);
-            Assert.AreEqual(0, result);
+            var result = FareyGeneratorLib.FareyGenerator.Generate(0);
+            Assert.AreEqual("0", result[0]);
         }
 
+        [TestMethod]
+        public void TestNegative()
+        {
+            var result = FareyGeneratorLib.FareyGenerator.Generate(-2);
+            Assert.AreEqual("0", result[0]);
+        }
+
+        [TestMethod]
+        public void TestThree()
+        {
+            var result = FareyGeneratorLib.FareyGenerator.Generate(3);
+            Assert.AreEqual(5, result.Length);
+        }
     }
 }
