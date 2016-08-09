@@ -9,7 +9,8 @@ namespace FareyGeneratorTest
         [TestMethod]
         public void TestZero()
         {
-
+            int result = FareyGenerator.Generate(0);
+            Assert.AreEqual(0, result);
         }
     }
 }
