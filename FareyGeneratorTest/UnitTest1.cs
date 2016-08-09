@@ -25,7 +25,7 @@ namespace FareyGeneratorTest
         public void TestThree()
         {
             var result = FareyGeneratorLib.FareyGenerator.Generate(3);
-            Assert.AreEqual(5, result.Length);
+            Assert.AreEqual(5, result.Count);
         }
     }
 }
