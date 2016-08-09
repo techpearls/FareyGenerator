@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FareyGeneratorTest", "FareyGeneratorTest\FareyGeneratorTest.csproj", "{BCCF692D-AE03-4E3C-9817-6C2D5F010592}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FareyGeneratorLib", "FareyGeneratorLib\FareyGeneratorLib.csproj", "{44913B06-544D-4F8E-9225-C36882A489CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BCCF692D-AE03-4E3C-9817-6C2D5F010592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCCF692D-AE03-4E3C-9817-6C2D5F010592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCCF692D-AE03-4E3C-9817-6C2D5F010592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44913B06-544D-4F8E-9225-C36882A489CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44913B06-544D-4F8E-9225-C36882A489CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44913B06-544D-4F8E-9225-C36882A489CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44913B06-544D-4F8E-9225-C36882A489CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
